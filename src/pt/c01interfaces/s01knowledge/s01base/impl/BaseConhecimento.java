@@ -14,7 +14,7 @@ public class BaseConhecimento implements IBaseConhecimento
 {
 	public static final String DIRETORIO_RELATIVO = "../../s02app/bd",
 	                           EXTENSAO = ".txt";
-	String diretorio = BaseConhecimento.class.getResource(DIRETORIO_RELATIVO).getPath();
+	String diretorio = BaseConhecimento.class.getResource(DIRETORIO_RELATIVO).getPath().replace("%20", " ");
 	
     public String[] listaNomes()
     {
