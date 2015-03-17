@@ -22,11 +22,14 @@ public class OrchestratorInit {
 		IResponder resp;
 		IStatistics stat;
 		
+		//Caso seja escolhido o desafio animals
 		if(desafio.equalsIgnoreCase("Animals")){
 			
+			//Permite que o usuario escolha o animal a ser adivinhado
 			System.out.println("Escolha um animal:");
 			String aescolhido = teclado.nextLine();			
 	        
+			//Bloco que adivinha o animal
 			System.out.println("Enquirer com " + aescolhido + "...");
 			stat = new Statistics();
 			resp = new ResponderAnimals(stat, aescolhido);
@@ -43,12 +46,15 @@ public class OrchestratorInit {
 			System.out.println("----------------------------------------------------------------------------------------\n");
 	        
 		}
-	        
+	    
+		//Caso o desafio maze seja escolhido
 		else if(desafio.equalsIgnoreCase("Maze")){
 		    
+			//Permite o usuario escolher o labirinto 
 			System.out.println("Escolha o labirinto");
 			String lescolhido = teclado.nextLine();
 			
+			//Bloco que acha a saida do labirinto escolhido 
 			System.out.println("Enquirer com " + lescolhido + "...");
 			stat = new Statistics();
 			resp = new ResponderMaze(stat, lescolhido);
