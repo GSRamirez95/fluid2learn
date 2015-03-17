@@ -22,7 +22,7 @@ public class Pergunta {
 		return pergunta;
 	}
 	
-	public String getResposta() {
+	public String getResposta(){
 		return resposta;
 	}
 

@@ -21,6 +21,10 @@ public class Pergunta {
 	public String getPergunta() {
 		return pergunta;
 	}
+	
+	public String getResposta() {
+		return resposta;
+	}
 
 	public void incQuantidadeVezes() {
 		this.quantidadeVezes++;

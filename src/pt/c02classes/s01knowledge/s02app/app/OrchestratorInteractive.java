@@ -1,5 +1,6 @@
 package pt.c02classes.s01knowledge.s02app.app;
 
+
 import pt.c02classes.s01knowledge.s01base.impl.Statistics;
 import pt.c02classes.s01knowledge.s01base.inter.IEnquirer;
 import pt.c02classes.s01knowledge.s01base.inter.IResponder;
@@ -14,6 +15,7 @@ public class OrchestratorInteractive
 		IEnquirer enq;
 		IResponder resp;
 		IStatistics stat;
+	    
 		
 		System.out.println("Enquirer com Mordor...");
 		stat = new Statistics();
